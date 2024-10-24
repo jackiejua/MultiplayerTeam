@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerOneMove : MonoBehaviour
 {
+    [SerializeField] private GameObject player;
+    [SerializeField] private float movementSpeed, rotationSpeed;
+    private Vector3 movementDirection;
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
     private bool isJumping = false;
@@ -14,6 +18,11 @@ public class PlayerOneMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void OnMove(InputValue value)
+    {
+        movementDirection = value.Get<Vector2>();
+    }
+    
     void Update()
     {
 
