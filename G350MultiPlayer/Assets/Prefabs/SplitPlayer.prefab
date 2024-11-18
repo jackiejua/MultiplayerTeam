@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 9051110303801501227}
   - component: {fileID: 5616844779979316453}
   - component: {fileID: 8118832845369513333}
-  - component: {fileID: 8518409152960317821}
   m_Layer: 7
   m_Name: SplitPlayer
   m_TagString: Player
@@ -204,19 +203,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!114 &8518409152960317821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593641828399660051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b018e91835e2d64c9f0cfb9e26690a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  candyText: {fileID: 0}
 --- !u!1 &3575245803674827235
 GameObject:
   m_ObjectHideFlags: 0
