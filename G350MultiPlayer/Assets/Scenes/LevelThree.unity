@@ -226,7 +226,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117297727}
-  - component: {fileID: 117297728}
   m_Layer: 0
   m_Name: Tiny Diamond
   m_TagString: Untagged
@@ -250,20 +249,6 @@ Transform:
   - {fileID: 745105970}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &117297728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117297726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df35cfc17d5bb24d9d8bd10c5db1ba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 4255164617127096841, guid: f02cc120f5d9fc149b6c876bae6654ed, type: 3}
-  speed: 5
 --- !u!1 &133337244
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +939,7 @@ GameObject:
   - component: {fileID: 745105973}
   - component: {fileID: 745105972}
   - component: {fileID: 745105971}
+  - component: {fileID: 745105974}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1047,6 +1033,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745105969}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &745105974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745105969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df35cfc17d5bb24d9d8bd10c5db1ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 5
 --- !u!1 &845796270
 GameObject:
   m_ObjectHideFlags: 0
