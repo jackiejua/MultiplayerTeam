@@ -417,8 +417,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4723747, y: 2.6736712, z: 1}
-  m_Center: {x: 0.029480815, y: 0.83683515, z: 0}
+  m_Size: {x: 1.8499565, y: 2.6736712, z: 1.9797544}
+  m_Center: {x: -0.0052928925, y: 0.83683515, z: -0.028469563}
 --- !u!114 &219657543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3821,8 +3821,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4723747, y: 2.6736712, z: 1}
-  m_Center: {x: 0.029480815, y: 0.83683515, z: 0}
+  m_Size: {x: 1.9233208, y: 2.6736712, z: 1.9588509}
+  m_Center: {x: -0.011253357, y: 0.83683515, z: -0.032533646}
 --- !u!114 &972409110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4123,8 +4123,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4723747, y: 2.6736712, z: 1}
-  m_Center: {x: 0.029480815, y: 0.83683515, z: 0}
+  m_Size: {x: 1.9275494, y: 2.6736712, z: 1.9108906}
+  m_Center: {x: 0.037508965, y: 0.83683515, z: -0.06553745}
 --- !u!114 &1013271195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4504,8 +4504,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4723747, y: 2.6736712, z: 1}
-  m_Center: {x: 0.029480815, y: 0.83683515, z: 0}
+  m_Size: {x: 1.4723747, y: 2.6736712, z: 1.920393}
+  m_Center: {x: 0.029480815, y: 0.83683515, z: -0.0394125}
 --- !u!1001 &1187692213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7230,7 +7230,7 @@ GameObject:
   - component: {fileID: 1498853998}
   m_Layer: 0
   m_Name: PlayerManager
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8233,8 +8233,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4723747, y: 2.6736712, z: 1}
-  m_Center: {x: 0.029480815, y: 0.83683515, z: 0}
+  m_Size: {x: 2.0990696, y: 2.6736712, z: 1.9034805}
+  m_Center: {x: 0.057972908, y: 0.83683515, z: -0.044862747}
 --- !u!114 &1805926006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8664,8 +8664,8 @@ SceneRoots:
   - {fileID: 1498854000}
   - {fileID: 1013237840}
   - {fileID: 1013271191}
-  - {fileID: 219657539}
   - {fileID: 972409106}
+  - {fileID: 219657539}
   - {fileID: 1805926002}
   - {fileID: 845474776}
   - {fileID: 1342381164}
