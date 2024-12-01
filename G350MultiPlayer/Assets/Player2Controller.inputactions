@@ -1,5 +1,5 @@
 {
-    "name": "Controller",
+    "name": "Player2Controller",
     "maps": [
         {
             "name": "Player",
@@ -46,6 +46,15 @@
                     "type": "PassThrough",
                     "id": "a19dc5ce-d7f0-4a65-96a3-904740fa36d1",
                     "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Grab",
+                    "type": "Button",
+                    "id": "2a1c6ad6-af4a-40d4-9fe7-149b6e41a3da",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -216,6 +225,17 @@
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b11d2e44-0b4f-4737-bd84-cd7c29b0aa56",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
