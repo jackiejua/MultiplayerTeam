@@ -11,26 +11,30 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        timerText.enabled = false;
         StartCoroutine(DisplayDialogueSequence());
     }
 
     IEnumerator DisplayDialogueSequence()
     {
         // Display initial dialogue
-        dialogueText.text = "Fine, I'll get you myself.";
-        yield return new WaitForSeconds(2); // Display for 2 seconds
+        dialogueText.text = "Diamond: Fine, I'll get you myself. RUN";
+        yield return new WaitForSeconds(3); // Display for 2 seconds
+        dialogueText.enabled = false;
+        timerText.enabled = true;
 
         // Display timer
-        float timer = 30f;
+        float timer = 45f;
         while (timer > 0)
         {
-            timerText.text = "Time remaining: " + timer.ToString("F1") + " seconds";
+            timerText.text = "Time: " + timer.ToString("F1") + "s";
             yield return new WaitForSeconds(1);
             timer -= 1;
         }
         timerText.text = "";
 
         // Display final dialogue
+        dialogueText.enabled = true;
         dialogueText.text = "Whatever, get out of here before I change my mind.";
     }
 }
