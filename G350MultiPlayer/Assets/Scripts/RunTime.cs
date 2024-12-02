@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     IEnumerator DisplayDialogueSequence()
+    {
         // Display initial dialogue
         dialogueText.text = "Fine, I'll get you myself.";
         yield return new WaitForSeconds(2); // Display for 2 seconds
