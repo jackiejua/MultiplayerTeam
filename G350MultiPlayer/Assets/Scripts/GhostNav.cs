@@ -32,6 +32,7 @@ public class GhostNav : MonoBehaviour
                 agent.SetDestination(point);
             }
         }
+        
 
     }
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
@@ -52,11 +53,13 @@ public class GhostNav : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("Died");
+            Debug.Log("Player has been caught");
         }
     }
 }
