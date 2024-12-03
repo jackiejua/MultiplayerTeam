@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -277,13 +277,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tiny Diamond
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4561150500843124122, guid: e65464f7de430e447b8b0c6b82b8adc8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5167951930471798533, guid: e65464f7de430e447b8b0c6b82b8adc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 71699642}
+    - targetCorrespondingSourceObject: {fileID: 2311397978153545678, guid: e65464f7de430e447b8b0c6b82b8adc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 71699644}
   m_SourcePrefab: {fileID: 100100000, guid: e65464f7de430e447b8b0c6b82b8adc8, type: 3}
 --- !u!1 &71699641 stripped
 GameObject:
@@ -312,6 +316,27 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1 &71699643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2311397978153545678, guid: e65464f7de430e447b8b0c6b82b8adc8, type: 3}
+  m_PrefabInstance: {fileID: 71699640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &71699644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71699643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62efbc87322d12141a78261545f044b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activationDistance: 10
+  stopDistance: 15
+  speed: 2
+  chaseDuration: 30
 --- !u!1 &82882842
 GameObject:
   m_ObjectHideFlags: 0
