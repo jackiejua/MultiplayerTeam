@@ -40,11 +40,12 @@ public class CandyCollect : MonoBehaviour
 
             if (candyCount >= 1)
             {
-               // StartCoroutine(RotateDoor());
+               
                Destroy(door);
                levelText.enabled = true;
                levelText.text = "Level Complete! Door is now open!";
                candyText.text = "Candy: Collected!" ;
+             //   StartCoroutine(RotateDoor());
             }
 
             

@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class RunTime : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private GameObject tiny;
+    [SerializeField] private GameObject door;
+
 
     void Start()
     {
@@ -19,12 +23,12 @@ public class RunTime : MonoBehaviour
     {
         // Display initial dialogue
         dialogueText.text = "Diamond: Fine, I'll get you myself. RUN";
-        yield return new WaitForSeconds(3); // Display for 2 seconds
+        yield return new WaitForSeconds(3); // Display for 3 seconds
         dialogueText.enabled = false;
         timerText.enabled = true;
 
         // Display timer
-        float timer = 45f;
+        float timer = 30f;
         while (timer > 0)
         {
             timerText.text = "Time: " + timer.ToString("F1") + "s";
@@ -32,6 +36,10 @@ public class RunTime : MonoBehaviour
             timer -= 1;
         }
         timerText.text = "";
+
+        // Destroy tiny when timer hits 0
+        Destroy(tiny);
+        Destroy(door);
 
         // Display final dialogue
         dialogueText.enabled = true;

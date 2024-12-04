@@ -83,7 +83,7 @@ public class TinyDiamondProximity : MonoBehaviour
         chaseTimer += Time.deltaTime;
         if (chaseTimer >= chaseDuration)
         {
-            Disappear();
+           // Disappear();
         }
     }
 

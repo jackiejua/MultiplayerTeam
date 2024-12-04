@@ -21,7 +21,7 @@ public class LevelTwoExit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("LevelThree");
+            SceneManager.LoadScene("LevelThreeOptionTwo");
         }
     }
 }
