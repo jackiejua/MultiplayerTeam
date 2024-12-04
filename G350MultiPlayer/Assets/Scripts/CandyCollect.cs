@@ -9,13 +9,18 @@ public class CandyCollect : MonoBehaviour
     [SerializeField] private TextMeshProUGUI candyText;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private GameObject door;
+    
+
     private int candyCount;
 
     // Start is called before the first frame update
     void Start()
     {
-        candyCount = 0;
-        UpdateCandyText();
+     //   candyCount = 0;
+       
+        candyText.text = "Candy: not found" ;
+        //    UpdateCandyText();
+        
         levelText.enabled = false;
     }
 
@@ -33,20 +38,23 @@ public class CandyCollect : MonoBehaviour
             UpdateCandyText();
             
 
-            if (candyCount >= 10)
+            if (candyCount >= 1)
             {
-                StartCoroutine(RotateDoor());
-                levelText.enabled = true;
-                levelText.text = "Level Complete! Door is now open!";
-
+               // StartCoroutine(RotateDoor());
+               Destroy(door);
+               levelText.enabled = true;
+               levelText.text = "Level Complete! Door is now open!";
+               candyText.text = "Candy: Collected!" ;
             }
+
+            
             Destroy(gameObject);
         }
     }
 
     void UpdateCandyText()
     {
-        candyText.text = "Candy: " + candyCount.ToString();
+        candyText.text = "Candy: Collected!" ;
     }
 
     IEnumerator RotateDoor()

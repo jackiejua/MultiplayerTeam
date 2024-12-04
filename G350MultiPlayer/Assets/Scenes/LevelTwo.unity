@@ -918,6 +918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SplitPlayer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1593641828399660051, guid: f02cc120f5d9fc149b6c876bae6654ed, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2072390207575833421, guid: f02cc120f5d9fc149b6c876bae6654ed, type: 3}
       propertyPath: m_Enabled
       value: 0
