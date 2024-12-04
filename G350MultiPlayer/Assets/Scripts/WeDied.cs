@@ -26,7 +26,7 @@ public class WeDied : MonoBehaviour
     {
         if (RetryGame.action.triggered)
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("LevelOne");
         }
       
     }

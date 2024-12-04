@@ -27,11 +27,11 @@ public class CandyCollect : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Candy"))
+        if (other.gameObject.CompareTag("Player"))
         {
             candyCount++;
             UpdateCandyText();
-            Destroy(other.gameObject);
+            
 
             if (candyCount >= 10)
             {
@@ -40,6 +40,7 @@ public class CandyCollect : MonoBehaviour
                 levelText.text = "Level Complete! Door is now open!";
 
             }
+            Destroy(gameObject);
         }
     }
 

@@ -76,7 +76,7 @@ public class SplitPlayerController : MonoBehaviour
               //  GameObject.Find("Body").GetComponent<RobotStateController>().SetPlayer(this.gameObject);
                 break;
             case 1:
-                transform.position = new Vector3(5, 1, 0);
+                transform.position = new Vector3(2, 1, 0);
                 this.gameObject.name = "Player2";
                
                 this.gameObject.GetComponent<Renderer>().material.color = Color.red;

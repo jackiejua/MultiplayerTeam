@@ -51,9 +51,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Grab",
+                    "name": "Accept",
                     "type": "Button",
-                    "id": "08adb279-595b-44ad-90bd-b0d08e4e97f9",
+                    "id": "b39403f6-f5b4-4334-bccb-c21cccf85067",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -228,12 +228,12 @@
                 },
                 {
                     "name": "",
-                    "id": "622a3c17-88b5-4217-9aad-bbf590cd84f3",
-                    "path": "<Gamepad>/buttonWest",
+                    "id": "2fb9004b-a5d6-46e9-9825-5ba27db780f0",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grab",
+                    "action": "Accept",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
